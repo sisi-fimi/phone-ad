@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>phone ad</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="main-div">
+     <nav>
+       <div class="logo">
+         <p>Ph<span>one</span>ex</p>
+       </div>
+
+       <div class="nav-links">
+         <ul>
+           <li><a href="" class="hover-link">Home</a></li>
+           <li><a href="" class="hover-link">Phone</a></li>
+           <li><a href="" class="hover-link">Accessories</a></li>
+           <li><a href="" class="hover-link">Cart</a></li>
+         </ul>
+       </div>
+     </nav>
+
+     <div class="information">
+       <div class="overlay"></div>
+       <img src="./images/—Pngtree—12-dot digital mobile phone on_5489677.png" alt="" class="phone-image">
+       <div id="circle">
+         <!-- I'll add icons here later -->
+         <div class="feature ft-1">
+          <i class="fas fa-camera"></i>
+           <div>
+            <h1>Camera</h1>
+            <p>12MP, Wide Angle Lens</p>
+           </div>
+         </div>
+
+         <div class="feature ft-2">
+          <i class="fas fa-microchip"></i>
+          <div>
+            <h1>Processor</h1>
+            <p>Snapdragon Octa-core 11nm</p>
+           </div>
+        </div>
+
+        <div class="feature ft-3">
+          <i class="fas fa-mobile"></i>
+          <div>
+            <h1>Display</h1>
+            <p>6.5" Mini-Drop Fullscreen</p>
+           </div>
+        </div>
+
+        <div class="feature ft-4">
+          <i class="fas fa-battery-full"></i>
+          <div>
+            <h1>Battery Life</h1>
+            <p>5000mAh, 720Hrs Standby</p>
+           </div>
+        </div>
+        
+       </div>
+     </div>
+
+     <div class="controls">
+        <i  id="upBtn" class="fas fa-chevron-up"></i>
+       <h3>Features</h3>
+       <i  id="downBtn" class="fas fa-chevron-up"></i>
+
+     </div>
+  </div>
+
+  <script>
+    var circle = document.getElementById("circle");
+    var upBtn = document.getElementById("upBtn");
+    var downBtn = document.getElementById("downBtn");
+
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+
+    upBtn.onclick = function(){
+      rotateSum = rotateValue + "rotate(-90deg)";
+      circle.style.transform = rotateSum;
+      rotateValue = rotateSum;
+    }
+    downBtn.onclick = function(){
+      rotateSum = rotateValue + "rotate(90deg)";
+      circle.style.transform = rotateSum;
+      rotateValue = rotateSum;
+    }
+  </script>
+</body>
+</html>

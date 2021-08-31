@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main-div {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #5727b0, #8ecdff);
+}
+.main-div nav {
+  width: 80%;
+  position: sticky;
+  margin: 20px auto;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.main-div nav .logo {
+  flex-basis: 20%;
+}
+.main-div nav .logo p {
+  font-size: 30px;
+  color: #5727b0;
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.8;
+}
+.main-div nav .logo p span {
+  font-size: 40px;
+  color: #8ecdff;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  opacity: 10 !important;
+}
+.main-div nav .nav-links {
+  flex: 1;
+  text-align: right;
+}
+.main-div nav .nav-links li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+.main-div nav .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.main-div nav .hover-link:hover {
+  border-bottom: 2px solid white;
+}
+.main-div .information {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+.main-div .information .overlay {
+  width: 0;
+  height: 0;
+  border-top: 500px solid #fff;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid #fff;
+  border-left: 500px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main-div .information .phone-image {
+  width: 630px;
+  position: absolute;
+  top: 53%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.main-div .information #circle {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+.main-div .information #circle .feature {
+  position: absolute;
+  display: flex;
+  color: #fff;
+}
+.main-div .information #circle .feature div {
+  margin-left: 30px;
+}
+.main-div .information #circle .feature p {
+  margin-top: 8px;
+}
+.main-div .information #circle .feature i {
+  font-size: 50px;
+  margin-top: 7px;
+}
+.main-div .information #circle .feature img {
+  width: 70px;
+}
+.main-div .information #circle .ft-1 {
+  top: 450px;
+  right: 50px;
+}
+.main-div .information #circle .ft-2 {
+  top: 150px;
+  left: 350px;
+  transform: rotate(-90deg);
+}
+.main-div .information #circle .ft-3 {
+  bottom: 450px;
+  left: 50px;
+  transform: rotate(-180deg);
+}
+.main-div .information #circle .ft-4 {
+  bottom: 150px;
+  right: 350px;
+  transform: rotate(-270deg);
+}
+.main-div .controls {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.main-div .controls i {
+  color: white;
+}
+.main-div .controls #upBtn {
+  width: 15px;
+  cursor: pointer;
+}
+.main-div .controls #downBtn {
+  width: 15px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.main-div .controls h3 {
+  margin: 15px 0;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
